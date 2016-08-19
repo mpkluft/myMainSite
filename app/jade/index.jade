@@ -16,7 +16,7 @@ head
     link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.css')
     // endbower
     // endbuild
-    // build:js scripts/vendor/modernizr.js
+    // build:js scripts/vendor/modernizr.jsnewscd 
     script(src='/bower_components/modernizr/modernizr.js')
     // endbuild
     // yandex shara begin
@@ -25,6 +25,24 @@ head
     // yandex shara end
   body
     include ./mixins/mixins.jade
+    header.header
+      .header__top-line
+        .container
+          .row
+            .col-xs-12  
+              img.header__img(src="../images/icon/myWorks.png", alt="my work")
+      nav.menu.menu_header
+        .container
+          .row
+            .col-md-2
+              a(href="#") [Luft.ru]
+            .col-md-10
+              ul.menu__ul
+                li.menu__li Portfolio
+                li.menu__li About
+                li.menu__li Contact
+                li.menu__li Services
+
     h1 Hello
     //
       [if lt IE 10]>

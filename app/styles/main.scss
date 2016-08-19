@@ -49,6 +49,7 @@
 
 body {
 	min-width: 320px;
+  background-color: #e7e7e7;
 }
 .button {
 	@include button;
@@ -57,5 +58,14 @@ body {
 	position: static;
 }
 
+// header begin
+  //top_line begins
+.header__img {
+  display: block;
+  margin: 0 auto;
+}
+
+  //top_line ends  
+// header end
 
 @import "partials/media.scss";
