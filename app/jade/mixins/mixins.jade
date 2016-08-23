@@ -28,3 +28,16 @@ mixin goods__items(img, name, description, price, quanity)
 //                  "2504 Беспроводной контроллер + 25 лицензий доступа...", 
 //                  "229 799 Р.", 
 //                  "1")
+
+
+mixin item(path,description)
+	.col-md-4.col-sm-6
+		.item
+			.item__wrap-image
+				img.item__image(src=path, alt="")
+			h3.item__h3
+				a.item__a_h3= description
+			.tags
+				a.item__a javascript
+				a.item__a php
+			i.fa.fa-git.icon-content(aria-hidden="true")

@@ -3,7 +3,18 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1230px){
+@media only screen and (max-width: 1200px){
+	.menu__a_ul {
+		font-size: 35px;
+	}
+	.menu__a {
+		font-size: 35px;
+		padding: 7px 25px 10px 25px;
+	}
+	.item__wrap-image {
+		height: 200px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -11,19 +22,69 @@
 	.header__img{
 		width: 350px;
 	}
-
+	.menu__a_ul {
+		font-size: 25px;
+	}
+	.menu__a {
+		font-size: 25px;
+		padding: 5px 21px 8px 21px;
+	}
+	.item__wrap-image {
+		height: 240px;
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.menu__a{
+		color: blue;
+		font-size: 18px;
+		padding: 3px 15px 4px 15px;
+		border: 2px solid black;
+	}
+	.menu__ul {
+		display: none;
+	}
 
+	.burger {
+		display: block;
+	}
+	.burger{
+		padding-top: 5px;
+	}
+	.item__wrap-image {
+		height: auto;
+	}
+	.menu-footer__a_ul {
+    font-size: 20px;
+	}
 }
 
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
- 
+	.content{
+	  padding: 15px 0 0 0;
+	}
+	.item {
+	  margin-bottom: 15px;
+	}
+ 	.header__img{
+		width: 300px;
+	}
+	.menu__a {
+		color: red;
+	}
+	.menu-footer__a_ul {
+    font-size: 15px;
+	}
+	.menu-footer__li {
+    margin-right: 5px;
+	}
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){} 
+@media only screen and (max-width : 320px){
+
+
+} 

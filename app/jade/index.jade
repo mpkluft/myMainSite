@@ -25,6 +25,8 @@ head
     // yandex shara end
   body
     include ./mixins/mixins.jade
+    .arrow-up
+      i.fa.fa-arrow-circle-up.fa-4x.my-fa(aria-hidden="true")
     header.header
       .header__top-line
         .container
@@ -34,16 +36,58 @@ head
       nav.menu.menu_header
         .container
           .row
-            .col-md-2
-              a(href="#") [Luft.ru]
-            .col-md-10
+            .col-lg-2.col-md-2.col-sm-2.col-xs-2
+              a.menu__a(href="#") [Luft.ru]
+            .col-lg-10.col-md-10.col-sm-10.col-xs-10
+              div.burger  
+                div.icon__burger
               ul.menu__ul
-                li.menu__li Portfolio
-                li.menu__li About
-                li.menu__li Contact
-                li.menu__li Services
+                li.menu__li 
+                  a.menu__a_ul Services
+                li.menu__li 
+                  a.menu__a_ul Contact
+                li.menu__li 
+                  a.menu__a_ul About
+                li.menu__li 
+                  a.menu__a_ul Portfolio
+      .content
+        .container
+          .row
+            +item("../images/news/news1.jpeg","Форма для приема заказов")
+            +item("../images/news/news2.jpeg","Форма для приема заказов")
+            +item("../images/news/news3.jpeg","Форма для приема заказов")
+            +item("../images/news/news1.jpeg","Форма для приема заказов")
+            +item("../images/news/news2.jpeg","Форма для приема заказов")
+            +item("../images/news/news3.jpeg","Форма для приема заказов")
+            +item("../images/news/news1.jpeg","Форма для приема заказов")
+            +item("../images/news/news2.jpeg","Форма для приема заказов")
+            +item("../images/news/news3.jpeg","Форма для приема заказов")
+          .row
+            .col-xs-12
+              .show-more 
+                a.show-more__a Показать еще
+      footer.footer
+        .footer__menu-wrap
+          .container
+            .row
+              .col-xs-12
+                nav.menu-footer
+                  ul.menu-footer__ul
+                    li.menu-footer__li 
+                      a.menu-footer__a_ul Services
+                    li.menu-footer__li 
+                      a.menu-footer__a_ul Contact
+                    li.menu-footer__li 
+                      a.menu-footer__a_ul About
+                    li.menu-footer__li 
+                      a.menu-footer__a_ul Portfolio
+        .footer__copyright-wrap
+          .container
+            .row
+              .col-xs-12
+                span.footer__copyright © 2016 Kredit-Office.ru. При использовании материалов гиперссылка на Kredit-Office.ru обязательна.
 
-    h1 Hello
+
     //
       [if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
