@@ -11,30 +11,53 @@ $(function(){
   //раскрытие меню .top-nav__ul по клику на бургер
   //поместить в ШТМЛ  div.burger  div.icon__burger
   $('.burger').click(function(){
-    $(this).toggleClass('is-active')
-    if($('.top-nav__ul').css('display') != 'block'){  
-      $('.top-nav__ul').css('display', 'block').animateCss('bounceInDown');
-      $('.autorization__ul').css('display', '');
+    $(this).toggleClass('is-active');
+    if($(this).hasClass('is-active')){  
+      $('.menu__mobile_ul').css('display', 'block').animateCss('bounceInDown');
+      $('.background').css('display', 'block').animateCss('fadeIn');
+      $('.burger').css({
+        'position': 'fixed',
+         'right': '10px',
+         'top': '10px'
+      })
+      
     } else {
-      $('.top-nav__ul').css('display', '');
+      $('.menu__mobile_ul').css('display', 'none');
+      $('.background').css('display', 'none');
+      $('.burger').css({
+        'position': '',
+        'left': '',
+        'top': ''
+      });
     }
   });
-  //раскрытие меню .autorization__ul по клику на человечка
-  $('.authorization__button').click(function(){
-    if($('.autorization__ul').css('display') != 'block'){  
-      $('.autorization__ul').css('display', 'block').animateCss('bounceInDown');
-      $('.top-nav__ul').css('display', '');
-      $('.burger').removeClass('is-active');
-    } else {
-      $('.autorization__ul').css('display', '');
-    }
-  });
-  // При ресайзе закрывать все меню
-  //$(window).resize(function(){
-  //    $('.burger').removeClass('is-active');
-  //   $('.autorization__ul').css('display', '');
-  //    $('.top-nav__ul').css('display', '');
-  //})
-  // слайдер 
+
+// При ресайзе закрывать все меню
+$(window).resize(function(){
+  //console.log($(window).scrollTop());
+  if($(".burger").hasClass('is-active')){
+    $('.menu__mobile_ul').css('display', '');
+    $('.background').css('display', '');
+    $('.burger').css({
+        'position': '',
+        'left': '',
+        'top': ''
+    }).removeClass('is-active');
+  }
+});
+$(window).scroll(function(){
+  if($(this).scrollTop() > 0) {
+    $('.arrow-up').fadeIn();
+  } else {
+    $('.arrow-up').fadeOut();
+  }
+});
+
+$('.arrow-up').click(function(){
+  $('body,html').animate({
+    scrollTop: 0
+  }, 400);
+});
+
 
 });
