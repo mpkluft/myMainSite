@@ -30,13 +30,13 @@ mixin goods__items(img, name, description, price, quanity)
 //                  "1")
 
 
-mixin item(path,description)
+mixin item(path,description,href)
 	.col-md-4.col-sm-6
 		.item
 			.item__wrap-image
 				img.item__image(src=path, alt="")
 			h3.item__h3
-				a.item__a_h3= description
+				a.item__a_h3(href= href)= description
 			.tags
 				a.item__a javascript
 				a.item__a php
