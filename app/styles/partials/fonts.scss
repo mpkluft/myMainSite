@@ -1,5 +1,5 @@
-@include font-face("pfdindisplaypro-regular", "/fonts/pfdindisplaypro-regular/pfdindisplaypro-regular", $file-formats: eot woff);
-@include font-face("pfdindisplaypro-light", "/fonts/pfdindisplaypro-light/pfdindisplaypro-light", $file-formats: eot woff);
-@include font-face("pfdindisplaypro-black", "/fonts/pfdindisplaypro-black/pfdindisplaypro-black", $file-formats: eot woff);
-@include font-face("RobotoRegular", "/fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff);
-@include font-face("fontawesome", "/fonts/fontawesome/fontawesome-webfont", $file-formats: eot woff2 woff);
+@include font-face("pfdindisplaypro-regular", "../fonts/pfdindisplaypro-regular/pfdindisplaypro-regular", $file-formats: eot woff);
+@include font-face("pfdindisplaypro-light", "../fonts/pfdindisplaypro-light/pfdindisplaypro-light", $file-formats: eot woff);
+@include font-face("pfdindisplaypro-black", "../fonts/pfdindisplaypro-black/pfdindisplaypro-black", $file-formats: eot woff);
+@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff);
+@include font-face("fontawesome", "../fonts/fontawesome/fontawesome-webfont", $file-formats: eot woff2 woff);

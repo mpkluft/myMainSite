@@ -1,0 +1,48 @@
+.test {
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	border: 1px solid grey;
+}
+.question {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin: 60px 0;
+}
+.question__operand,
+.question__operator {
+	text-align: center;
+	display: inline-block;
+	width: 30px;
+	margin: 40px 10px;
+	font-size: 40px;
+}
+.input_result {
+	width: 50px;
+	height: 39px;
+	font-size: 44px;
+	padding: 5px;
+}
+.form {
+	padding-left: 96px;
+}
+.form__arrow-wrap{
+	position: relative;
+	display: inline-block;
+}
+.form__input {
+	width: 15px;
+	display: block;
+	margin: 0 auto;
+	font-size: 25px;
+	padding: 2px 4px;
+	margin-bottom: 10px;
+}
+.test__img-wrap {
+	width: 100%;
+	margin-top: -22px;
+	padding-left: 60px;
+}
+
+
